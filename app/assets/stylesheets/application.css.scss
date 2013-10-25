@@ -16,9 +16,9 @@
 
 ul {list-style: none;}
 
-#header {background-color: grey; height: 173px; }
+#header {background: url("bg_h.jpg"); height: 178px; }
 #header_title {height: 90px; border-bottom: 1px solid #ddd;}
 #navigation_container {background-color: #fff; height: 80px;}
 #navigation_bar {margin: 0 auto; width: 966px;}
-#navigation_bar li{width: 140px; height: 80px; float: left; border-right: 1px solid #ddd; text-align: center; padding-top: 30px;}
-#navigation_bar li:hover{background: #e2e2e2;}
+#navigation_bar li{width: 140px; height: 80px; float: left; border-right: 1px solid #ddd; text-align: center; padding-top: 32px;}
+#navigation_bar li:hover{background: #f2f2f2;}
