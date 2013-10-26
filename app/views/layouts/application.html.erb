@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
   <title>BjgasRepo</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="header">
-  	<div id="header_title"></div>
-	<div id="navigation_container">
-	  <ul id="navigation_bar">
-	    <li>首页</li>
-	    <li>公司简介</li>
-	    <li>业务介绍</li>
-	    <li>运输与配送</li>
-	    <li>网点地址</li>
-	    <li>...</li>
-	  </ul>
+  <div class="header">
+  	<div class="header_title">
+  		<div  class ="btn-group nav_menu_m visible-xs" >
+           <button  class ="btn btn-lg dropdown-toggle"  data-toggle ="dropdown" ><span class="glyphicon glyphicon-align-justify">&nbsp;</span><span class ="caret" ></span></button>
+           <ul class ="dropdown-menu pull-right">
+             <li><a href ="#">首页</a></li>
+             <li role="presentation" class="divider"></li>
+             <li><a href ="#">公司简介</a></li>
+             <li role="presentation" class="divider"></li>
+             <li><a href ="#">业务介绍</a></li>
+             <li role="presentation" class="divider"></li>
+             <li><a href ="#">运输与配送</a></li>
+             <li role="presentation" class="divider"></li>
+             <li><a href ="#">网点地址</a></li>
+           </ul>
+         </div>
+  	</div>
+	<div class="nav_bg hidden-xs">
+	  <div class="nav_menu">
+	    <ul class="nav_bar">
+	      <li>首页</li>
+	      <li>公司简介</li>
+	      <li>业务介绍</li>
+	      <li>运输与配送</li>
+	      <li class="last">网点地址</li>
+	    </ul>
+	  </div>
 	</div>
   </div>
   
