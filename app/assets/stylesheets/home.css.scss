@@ -1,0 +1,10 @@
+.hero_container {padding: 1%; background: url("bg_b.jpg") repeat scroll center center transparent;}
+.hero_container .hero{max-width: 992px; margin: 0px auto; text-align: center; }
+.hero_container .hero .slogans{color: #fff; color: #FFFFFF;font-family: Microsoft YaHei;font-size: 24px;line-height: 160%; margin-top: 15px; display:inline-block;}
+.hero_container .hero .slogan{white-space:nowrap;}
+.hero_container .image_border {width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
+.hero_container .image_border img {width: 100%; border: 3px solid rgb(255, 255, 255);} 
+.hero_container .btn-buy {float: right;
+    margin-top: 14px;
+    padding: 10px 3%;}
+.hero_container .btn-buy-xs {width: 70%; margin:auto; display:inline-block; margin-bottom:8px;}
