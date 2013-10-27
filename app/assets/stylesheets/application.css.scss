@@ -21,11 +21,11 @@ ul {list-style: none;}
 /* header */
 .header {background: url("bg_h.jpg");}
 .header_title {height: 90px; background: url("bg_h.jpg"); position: relative; }
-.header_title a{text-decoration: none; float:left;}
+.header_title .title{text-decoration: none; float:left;}
 .header_title .logo {width: 88px; position:absolute; left: 0px; top: 0px;}
-.header_title .title {margin-left: 110px; color: #2A6496; padding-top: 20px; line-height: 29px;}
-.header_title .title .ch{font-size: 35px; line-height: 23px; display:block;}
-.header_title .title .en{font-size: 23px;}
+.header_title .title .text {margin-left: 110px; color: #2A6496; padding-top: 20px; line-height: 29px;}
+.header_title .title .text .ch{font-size: 35px; line-height: 23px; display:block;}
+.header_title .title .text .en{font-size: 23px;}
 .nav_bg {border-top: 1px solid #ddd; background: url("bg_h.jpg"); height: 85px;}
 .nav_menu {background-color: #fff; height: 80px;}
 .nav_bar {margin: 0 auto; max-width: 992px;}
