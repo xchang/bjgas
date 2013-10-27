@@ -13,8 +13,12 @@
 
 @import "twitter/bootstrap";
 
+/* common */
+html * {margin: 0; padding: 0;}
 ul {list-style: none;}
+.content-container {max-width: 992px; margin: 0 auto;}
 
+/* header */
 .header {background: url("bg_h.jpg");}
 .header_title {height: 90px; background: url("bg_h.jpg");}
 .nav_bg {border-top: 1px solid #ddd; background: url("bg_h.jpg"); height: 85px;}
@@ -23,7 +27,6 @@ ul {list-style: none;}
 .nav_bar li{width: 18%; height: 80px; float: left; border-right: 1px solid #ddd; text-align: center; padding-top: 32px;}
 .nav_bar li.last{border-right:none;}
 .nav_bar li:hover{background: #f8f8f8;}
-
 
 
 /* Phones (<768px) */
