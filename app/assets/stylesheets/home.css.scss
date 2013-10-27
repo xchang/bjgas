@@ -11,4 +11,17 @@
 
 .intro_container {background: url("bg_h.jpg"); padding: 20px 0;}
 .intro { max-width: 1022px; }
-.intro .thumbnail img {max-width: 100%;}
+.intro .thumbnail img {max-width: 100%; }
+.intro h5 {color: #4CAA47; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
+.intro p {font-size: 16px;font-family: Microsoft YaHei;}
+
+.other_container {padding: 20px 0;}
+.other { max-width: 1022px; font-family: Microsoft YaHei;}
+.other h5 {color: #4CAA47; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
+.other .about-us {font-size: 16px; line-height: 25px;}
+.other .news {font-family: Microsoft YaHei; padding-left: 15px; position:relative;}
+.other .news .icon{position: absolute; left:0; top: 2px;}
+
+@media (min-width: 768px){
+.other .about-us {border-right: 1px dashed #ccc;}	
+}
