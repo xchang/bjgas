@@ -36,7 +36,7 @@ BjgasRepo::Application.configure do
   # Precompile additional assets
   config.assets.precompile += %w( *.svg *.eot *.woff *.ttf )
   config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif)
-  config.assets.precompile += %w( *.js *.css)
+  # config.assets.precompile += %w( *.js *.css)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
