@@ -1,3 +1,5 @@
+@import "variables";
+
 .hero_container {padding: 1%; background: url("bg_b.jpg") repeat scroll center center transparent;}
 .hero_container .hero{max-width: 992px; margin: 0px auto; text-align: center; }
 .hero_container .hero .slogans{color: #fff; color: #FFFFFF;font-family: Microsoft YaHei;font-size: 24px;line-height: 160%; margin-top: 15px; display:inline-block;}
@@ -13,12 +15,12 @@
 .intro { max-width: 1022px; }
 .intro .item{ margin-bottom: 30px; }
 .intro .thumbnail img {max-width: 100%; }
-.intro h5 {color: #4CAA47; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
+.intro h5 {color: $title-color; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
 .intro p {font-size: 16px;font-family: Microsoft YaHei;}
 
 .other_container {padding: 20px 0;}
 .other { max-width: 1022px; font-family: Microsoft YaHei;}
-.other h5 {color: #4CAA47; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
+.other h5 {color: $title-color; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
 .other .about-us {font-size: 16px; line-height: 25px;}
 .other .news {font-family: Microsoft YaHei; padding-left: 15px; position:relative;}
 .other .news .icon{position: absolute; left:0; top: 2px;}

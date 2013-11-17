@@ -1,0 +1,22 @@
+<% content_for :head do %>  
+  <%= stylesheet_link_tag 'common' %>  
+<% end %> 
+
+<div class="content-sperator"></div>
+<div class="content-body">
+	<div class="sidebar col-sm-4 col-md-2">
+		<ul class="introduction-bar">
+			<li class="current"><a href="#">企业概述及规模</a></li>
+			<li><a href="#">相关产品介绍</a></li>
+			<li><a href="#">安全管理</a></li>
+			<li><a href="#">灌装与质量</a></li>
+			<li><a href="#">企业概述及规模</a></li>
+		</ul>   
+    </div>
+    <div class="brief col-sm-8 col-md-10">
+      <%= yield %>
+    </div>
+</div>
+
+
+
