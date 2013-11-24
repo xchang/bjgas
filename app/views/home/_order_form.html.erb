@@ -1,0 +1,74 @@
+<div class="order-form modal fade" id="placeOrderForm">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">我要订购...</h4>
+      </div>
+      <div class="modal-body">
+        <div class="well directions">
+        请留下您的需求和联系方式，我们的销售人员会第一时间联系您。
+        </div>
+        <form class="form-horizontal" role="form" id="orderForm" action="/order">
+          <div class="form-group">
+            <label for="contactPerson" class="col-sm-3 control-label"><span class="mandatory">*</span>联系人</label>
+            <div class="col-sm-9">
+              <input class="form-control" id="contactPerson" placeholder="联系人姓名">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address" class="col-sm-3 control-label"><span class="mandatory">*</span>送货地址</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="address" placeholder="详细地址">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label"><span class="mandatory">*</span>气瓶规格</label>
+            <div class="col-sm-5">
+              <select class="form-control" value="?">
+                <option>5kg</option>
+                <option>15kg</option>
+                <option>50kg（气相）</option>
+                <option>50kg（液相）</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label"><span class="mandatory">*</span>数量</label>
+            <div class="col-sm-5 input-group">
+              <input type="text" class="form-control" id="mobilephone" placeholder="1">
+              <span class="input-group-addon">瓶</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mobilephone" class="col-sm-3 control-label"><span class="mandatory">*</span>手机号码</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="mobilephone" placeholder="如：13010002000">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mobilephone" class="col-sm-3 control-label">固话号码</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="telphone" placeholder="如：55553333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">电子邮箱</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" id="email" placeholder="如：bjgas@163.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="captcha" class="col-sm-3 control-label">验证码</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="captcha">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="placeOrderBtn">订购</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
