@@ -1,6 +1,6 @@
 @import "variables";
 
-.hero_container {padding: 1%; background: url("bg_h.jpg") repeat scroll center center transparent; padding-top: 0; padding-bottom: 0;}
+.hero_container {padding: 10px 1%;}
 .hero_container .hero{max-width: $content-width; margin: 0px auto; text-align: center; background: url("bg_b.jpg") repeat scroll center center transparent; padding: 10px; }
 .hero_container .hero .slogans{color: #fff; color: #FFFFFF;font-family: Microsoft YaHei;font-size: 24px;line-height: 160%; margin-top: 15px; display:inline-block;}
 .hero_container .hero .slogan{white-space:nowrap;}
@@ -11,8 +11,8 @@
     padding: 10px 3%;}
 .hero_container .btn-buy-xs {width: 70%; margin:auto; display:inline-block; margin-bottom:8px;}
 
-.intro_container {background: url("bg_h.jpg"); padding: 20px 0 0;}
-.intro { max-width: 1022px; }
+.intro_container {}
+.intro { max-width: $content-width; background: url("bg_h.jpg");}
 .intro .item{ margin-bottom: 30px; }
 .intro .thumbnail img {max-width: 100%; }
 .intro h5 {color: $title-color; font-size: 20px;margin: 15px 0 10px; font-family: Microsoft YaHei;}

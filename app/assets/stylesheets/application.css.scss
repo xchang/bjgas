@@ -21,19 +21,19 @@ ul {list-style: none;}
 a {outline: none !important;}
 
 /* header */
-.header {background: url("bg_h.jpg");}
+.header {background: url("bg_h.jpg"); height:102px;}
 .header_title {height: 90px; background: url("bg_h.jpg"); position: relative; }
 .header_title .title{text-decoration: none; float:left;}
-.header_title .logo {width: 88px; position:absolute; left: 0px; top: 0px;}
-.header_title .title .text {margin-left: 110px; color: $title-color; padding-top: 20px; line-height: 29px;}
-.header_title .title .text .ch{font-size: 35px; line-height: 23px; display:block;}
-.header_title .title .text .en{font-size: 23px;}
-.nav_bg {border-top: 1px solid #ddd; background: url("bg_h.jpg"); height: 85px;}
-.nav_menu {background-color: #fff; height: 80px;}
-.nav_bar {margin: 0 auto; max-width: $content-width;}
-.nav_bar li{width: 14%; height: 80px; float: left; border-right: 1px solid #ddd; text-align: center; padding-top: 32px; font-size: 17px; color: $title-color;}
-.nav_bar li.last{border-right:none;}
-.nav_bar li:hover{background: #f8f8f8;}
+.header_title .logo {width: 85px; position:absolute; left: 0px; top: 5px;}
+.header_title .title .text {margin-left: 100px; color: $title-color; padding-top: 23px; line-height: 29px;}
+.header_title .title .text .ch{font-size: 32px; line-height: 23px; display:block;}
+.header_title .title .text .en{font-size: 20px;}
+.nav_menu {}
+.nav_bar {margin: 0 auto; position:absolute;right:0;}
+.nav_bar li{height: 102px; float: left; text-align: center; padding: 65px 11px 0; font-size: 17px; color: $title-color;}
+.nav_bar li a{text-decoration:none;}
+.nav_bar li:hover {border-bottom: 2px solid #6A6496;}
+.nav_bar li.register:hover {border-bottom: none;}
 
 
 /* Phones (<768px) */
