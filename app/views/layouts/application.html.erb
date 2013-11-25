@@ -46,9 +46,15 @@
     <div class="nav_bg hidden-xs">
     </div>
   </div>
-<%= yield %>
+<%= content_for?(:content) ? yield(:content) : yield %>
+  <footer>
+    网站建设中...
+    <p>
+      <span>Copyright © 2013-2014 北京液化气 西郊分公司, all rights reserved</span>
+      <span>｜</span>
+      <span>ICP备案中</span>
+    </p>
+    <p><a>联系我们</a></p>
+  </footer>
 </body>
-<footer>
-  footer
-</footer>
 </html>
