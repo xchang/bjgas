@@ -5,11 +5,11 @@ $(document).ready(function () {
 
   var invalidInputs = function(jqXHR, textStatus, errorThrown) {
     alert("invalidInputs!");
-  }
+  };
 
   var internalError = function(jqXHR, textStatus, errorThrown) {
     alert("internalError!");
-  }
+  };
 
   $("#placeOrderBtn").bind("click", function(){
       $.ajax({

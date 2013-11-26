@@ -2,7 +2,7 @@
 
 .hero_container {padding: 10px 1%;}
 .hero_container .hero{max-width: $content-width; margin: 0px auto; text-align: center; background: url("bg_b.jpg") repeat scroll center center transparent; padding: 10px; }
-.hero_container .hero .slogans{color: #fff; color: #FFFFFF;font-family: Microsoft YaHei;font-size: 24px;line-height: 160%; margin-top: 15px; display:inline-block;}
+.hero_container .hero .slogans{color: #fff; color: #FFFFFF;font-size: 24px;line-height: 160%; margin-top: 15px; display:inline-block;}
 .hero_container .hero .slogan{white-space:nowrap;}
 .hero_container .image_border {width: 100%; background: none repeat scroll 0% 0% rgb(255, 255, 255); }
 .hero_container .image_border img {width: 100%; border: 3px solid rgb(255, 255, 255);} 
@@ -15,14 +15,14 @@
 .intro { max-width: $content-width; background: url("bg_h.jpg");}
 .intro .item{ margin-bottom: 30px; }
 .intro .thumbnail img {max-width: 100%; }
-.intro h5 {color: $title-color; font-size: 20px;margin: 15px 0 10px; font-family: Microsoft YaHei;}
-.intro p {font-size: 16px;font-family: Microsoft YaHei; margin-top: 8px;}
+.intro h5 {color: $title-color; font-size: 20px;margin: 15px 0 10px;}
+.intro p {font-size: 16px;margin-top: 8px;}
 
 .other_container {padding: 20px 0;}
-.other { max-width: 1022px; font-family: Microsoft YaHei;}
-.other h5 {color: $title-color; font-size: 20px;margin: 15px 0 15px 0; font-family: Microsoft YaHei;}
+.other { max-width: 1022px;}
+.other h5 {color: $title-color; font-size: 20px;margin: 15px 0 15px 0; }
 .other .about-us {font-size: 16px; line-height: 25px;}
-.other .news {font-family: Microsoft YaHei; padding-left: 15px; position:relative;}
+.other .news {padding-left: 15px; position:relative;}
 .other .news .icon{position: absolute; left:0; top: 2px;}
 
 @media (min-width: 768px){

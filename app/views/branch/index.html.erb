@@ -1,0 +1,33 @@
+<% content_for :head do %>  
+  <%= stylesheet_link_tag 'branch' %>
+<% end %>
+
+<div class="branches">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#south" data-toggle="tab">南郊分公司</a></li>
+    <li><a href="#north" data-toggle="tab">北郊分公司</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="south">
+      <ul>
+        <li><a href="#">市府</a></li>
+        <li><a href="#">万源</a></li>
+        <li><a href="#">左安</a></li>
+        <li><a href="#">香炉</a></li>
+        <li><a href="#">红土</a></li>
+      </ul>
+    </div>
+    <div class="tab-pane" id="north">
+      <ul>
+        <li><a href="#">中关</a></li>
+        <li><a href="#">北太</a></li>
+        <li><a href="#">大柳</a></li>
+        <li><a href="#">魏公</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="map-container">
+  <img src="assets/map.jpg" />
+</div>
