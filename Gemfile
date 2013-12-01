@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 1.2'
 
 # Devise is a flexible authentication solution for Rails based on Warden.
 gem 'devise'
+gem 'devise-i18n', git: 'https://github.com/tigrish/devise-i18n.git'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
