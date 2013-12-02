@@ -1,0 +1,31 @@
+@import "variables";
+.devise-container { width:100%; min-height: 500px; background-color: white; 
+  .form-container { 
+    width:240px; height:auto;position: relative; top:30px; left: 69%; 
+    background-color: rgba(16, 97, 185, 0.7); border: 2px solid rgb(55, 84, 111);
+    padding: 10px; color:white; 
+    .title { padding-top: 10px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px solid #E8ECF1;}
+    label {font-weight: 100;}
+    a {color:#E8ECF1;}
+    .input {width: 100%;}
+    .btn {color:white;width: 100%; border-radius: 0; height: 30px; 
+      background-color:#374C66; border-color:#374C66; margin-top: 5px; margin-bottom: 5px;}
+    .links {
+      a { padding-left: 10px;
+        &:first-child {padding-left:0;}
+      }
+    }
+    .bottom-btn { padding-top: 10px; padding-bottom: 10px; margin-top: 10px;}  
+  }
+}
+
+.user-info { background-repeat:no-repeat; background: url('green.jpg'); 
+  background-size: 100% 170%; background-position: center; opacity: 0.9;
+  .form-container {
+    width:460px; height:auto; position:relative; top:50px; left:52%; 
+    background-color:rgba(16, 97, 185, 0.7); padding-left: 30px; padding-right: 30px;
+    input {width: 100%;}
+  }
+}
+.user-login { background-repeat:no-repeat; background: url('blurred_lines.jpg'); background-size: 100% 170%;background-position: center; opacity: 0.9;}
+.user-sign-up { background-repeat:no-repeat; background: url('lighthousemorning.jpg'); background-size: 100% 170%; background-position: center; opacity: 0.9;}

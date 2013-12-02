@@ -1,17 +1,20 @@
-<h2>登录</h2>
+<div class="devise-container user-login">
+  <div class='form-container'>
+  <h4 class='title'>登录</h4>
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <div><%= f.label :email, "邮箱"%><br />
+    <%= f.email_field :email, :autofocus => true, :class => 'input' %></div>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email, "邮箱"%><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+    <div><%= f.label :password, "密码" %><br />
+    <%= f.password_field :password, :class => 'input' %></div>
 
-  <div><%= f.label :password, "密码" %><br />
-  <%= f.password_field :password %></div>
+    <% if devise_mapping.rememberable? -%>
+      <div><%= f.check_box :remember_me %> <%= f.label :remember_me, "下次自动登录" %></div>
+    <% end -%>
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me, "下次自动登录" %></div>
-  <% end -%>
-
-  <div><%= f.submit "登录" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+    <div><%= f.submit "登录", :class => 'btn btn-default' %></div>
+  <% end %>
+  <%= render "devise/shared/links" %>
+  </div>
+</div>
+<%= stylesheet_link_tag 'devise' %> 
