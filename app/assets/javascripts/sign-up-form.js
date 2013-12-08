@@ -1,10 +1,9 @@
 var signUpForm = (function () {
   'use strict';
   var errors = [];
-  var values = {};
 
   function validEmpty(name){
-    var value = $.trim($("#" + name).val());
+    var value = $.trim($("#" + name, $('#signUpFormContainer')).val());
     if (value === '') {
       var err = {};
       err['name'] = name;
@@ -14,8 +13,8 @@ var signUpForm = (function () {
   }
 
   function validSame(val1, val2){
-    var v1 = $.trim($("#" + val1).val());
-    var v2 = $.trim($("#" + val2).val());
+    var v1 = $.trim($("#" + val1, $('#signUpFormContainer')).val());
+    var v2 = $.trim($("#" + val2, $('#signUpFormContainer')).val());
     if (v1 !== v2) {
       var tmp1 = {};
       var tmp2 = {};
@@ -55,7 +54,7 @@ var signUpForm = (function () {
     },
     displayErrors: function(){
       $.each(errors, function(index, value){
-        var el = $('#' + value['name']).parents('.form-item')[0];
+        var el = $('#' + value['name'], $('#signUpFormContainer')).parents('.form-item')[0];
         $('.warning', el).html(value['error']);
         $(el).addClass('has-error');
       });
@@ -63,9 +62,9 @@ var signUpForm = (function () {
     submit: function(){
       var self = this;
       var values = {};
-      values['email'] = $.trim($('#userEmail').val());
-      values['password'] = $.trim($('#userPassword').val());
-      values['password_confirm'] = $.trim($('#userPasswordConfirm').val());
+      values['email'] = $.trim($('#userEmail', $('#signUpFormContainer')).val());
+      values['password'] = $.trim($('#userPassword', $('#signUpFormContainer')).val());
+      values['password_confirm'] = $.trim($('#userPasswordConfirm', $('#signUpFormContainer')).val());
       return user.create(values).done(function(data){
         window.location.href = "/";
       }).fail(function(data){
@@ -77,11 +76,19 @@ var signUpForm = (function () {
       errors = [];
       $('.form-item', $('#signUpFormContainer')).removeClass('has-error');
       $('.warning', $('#signUpFormContainer')).html('');
+    },
+    clearInputs: function(){
+      $('.inline-input', $('#signUpFormContainer')).val('');
     }
   }
 }());
 
 $(document).ready(function () {
+  $('#signUpFormContainer').on('hidden.bs.modal', function () {
+    signUpForm.clearErrors();
+    signUpForm.clearInputs();
+  });
+  
   $("#signUpBtn").bind('click', function(e){
     signUpForm.clearErrors();
     var isValid = signUpForm.validInputs();

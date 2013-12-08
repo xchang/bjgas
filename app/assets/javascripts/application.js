@@ -18,8 +18,10 @@
 //= require async_request
 //= require helpers
 //= require models/user
+//= require models/order
 //= require sign-up-form
 //= require sign-in-form
+//= require place-order-form
 //= require_tree .
 
 $(document).ready(function () {

@@ -1,8 +1,10 @@
 class User
   include Mongoid::Document
+  include Mongoid::Timestamps
   field :email, type: String
   field :password, type: String
   field :password_confirmation, type: String
+  field :role, type: String, default: -> { "customer" }
 
   validates_presence_of :email, :password
   validates_confirmation_of :password

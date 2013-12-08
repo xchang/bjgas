@@ -1,0 +1,61 @@
+<div class="gas-modal modal fade" id="placeOrderFormContainer" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
+        <h4 class="modal-title">我要订购...</h4>
+      </div>
+      <div class="modal-body">
+        <div class="well directions">
+        请留下您的需求和联系方式，我们的销售人员会第一时间联系您。
+        </div>
+        <form role="form" id="orderForm">
+          <div class="form-item">
+            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <label for="orderContact" class="form-label">联系人</label>
+            <input class="form-control inline-input small-input" id="orderContact" placeholder="联系人姓名">
+            <span class='warning'></span>
+          </div>
+          <div class="form-item">
+            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <label for="orderAddress" class="form-label">送货地址</label>
+            <input type="text" class="form-control inline-input" id="orderAddress" placeholder="详细地址">
+            <span class='warning'></span>
+          </div>
+          <div class="form-item">
+            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <label for="orderSpecification" class="form-label">气瓶规格</label>
+            <select class="form-control inline-input small-input" id="orderSpecification" value="?">
+              <option>5kg</option>
+              <option>15kg</option>
+              <option>50kg（气相）</option>
+              <option>50kg（液相）</option>
+            </select>
+            <span class='warning'></span>
+          </div>
+          <div class="form-item">
+            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <label for="orderNumber" class="form-label">数量</label>
+            <input type="text" class="form-control inline-input small-input" id="orderNumber" placeholder="1">
+            <span class="form-label">瓶</span>
+            <span class='warning'></span>
+          </div>
+          <div class="form-item">
+            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <label for="orderMobile" class="form-label">手机号码</label>
+            <input type="text" class="form-control inline-input" id="orderMobile" placeholder="如：13010002000">
+            <span class='warning'></span>
+          </div>
+          <div class="form-item">
+            <span class="control-label">&nbsp;</span>
+            <label for="orderTelphone" class="form-label">固话号码</label>
+            <input type="text" class="form-control inline-input" id="orderTelphone" placeholder="如：55553333">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-blue" id="placeOrderBtn">订购</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

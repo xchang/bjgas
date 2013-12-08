@@ -35,12 +35,19 @@
         display:inline-block; 
         width: 15px; 
       }
-      input.inline-input {
+      .form-label {
+        width: 70px;
+        font-weight: normal;
+      }
+      .inline-input {
         width: 70%; 
         display: inline-block; 
       }
       i.icon-asterisk { font-size: 12px;}
       .warning { color: $red; }
+      .small-input {
+        width: 120px;
+      }
     }
     .form-item.last { padding-bottom: 5px;}
   }

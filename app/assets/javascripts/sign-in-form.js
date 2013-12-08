@@ -1,7 +1,6 @@
 var signInForm = (function () {
   'use strict';
   var errors = [];
-  var values = {};
 
   function validEmpty(name){
     var value = $.trim($("#" + name, $('#signInFormContainer')).val());
@@ -59,11 +58,19 @@ var signInForm = (function () {
       errors = [];
       $('.form-item', $('#signInFormContainer')).removeClass('has-error');
       $('.warning', $('#signInFormContainer')).html('');
+    },
+    clearInputs: function(){
+      $('.inline-input', $('#signInFormContainer')).val('');
     }
   }
 }());
 
 $(document).ready(function () {
+  $('#signInFormContainer').on('hidden.bs.modal', function () {
+    signInForm.clearErrors();
+    signInForm.clearInputs();
+  });
+
   $("#signInBtn").bind('click', function(e){
     signInForm.clearErrors();
     var isValid = signInForm.validInputs();
