@@ -137,6 +137,7 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
+  moped
   rails (= 4.0.0)
   rails_12factor
   sass-rails (~> 4.0.0)

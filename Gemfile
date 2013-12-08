@@ -21,6 +21,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use mongo as the database
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
+gem 'moped'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
