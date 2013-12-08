@@ -35,11 +35,19 @@
           <li><a href ="#">业务介绍</a></li>
           <li><a href ="#">公司相册</a></li>
           <li><a href ="/branch">网点地址</a></li>
+          <% if session.has_key?(:current_user) && !session[:current_user].nil? %>
           <li class="last register">
-            <a  data-toggle="modal" data-target="#signUpFormContainer">注册</a>
+            <a href="#">编辑</a>
             <span>|</span>
-            <a>登录</a>
+            <a href="#" id="signOutBtn">退出</a>
           </li>
+          <% else %>
+          <li class="last register">
+            <a data-toggle="modal" data-target="#signUpFormContainer">注册</a>
+            <span>|</span>
+            <a data-toggle="modal" data-target="#signInFormContainer">登录</a>
+          </li>
+          <% end %>
         </ul>
       </div>  
   	</div>
@@ -61,3 +69,4 @@
 </body>
 </html>
 <%= render 'modals/sign_up' %>
+<%= render 'modals/sign_in' %>

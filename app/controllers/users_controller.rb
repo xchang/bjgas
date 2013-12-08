@@ -3,7 +3,8 @@ class UsersController < ApplicationController
     user = User.new create_params
     raise AppExceptions::ValidationError.new(user.errors.messages) unless user.valid?
     user.save
-    render nothing: true, status: :created
+    set_current_user user
+    render json: {}, status: :created
   end
 
 private

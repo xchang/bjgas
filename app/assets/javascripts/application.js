@@ -10,45 +10,22 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
+//= require jquery-2.0.3
+//= require jquery.cookie
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require turbolinks
+//= require async_request
+//= require helpers
+//= require models/user
+//= require sign-up-form
+//= require sign-in-form
 //= require_tree .
 
 $(document).ready(function () {
-  var created = function(data, textStatus, jqXHR){
-    alert("created!");
-  };
-
-  var invalidInputs = function(jqXHR, textStatus, errorThrown) {
-    alert("invalidInputs!");
-  };
-
-  var internalError = function(jqXHR, textStatus, errorThrown) {
-    alert("internalError!");
-  };
-
-  $("#signUpBtn").bind("click", function(){
-    var email = $('#userEmail').val();
-    var pwd = $('#userPassword').val();
-    var confirmPwd = $('#userConfirmPassword').val();
-    var data = {
-      email: email,
-      password: pwd,
-      password_confirmation: confirmPwd
-    }
-      $.ajax({
-          url: '/users',
-          data: data,
-          type: "POST",
-          dataType: "JSON",
-          statusCode: {
-            201: created,
-            400: invalidInputs,
-            500: internalError
-          }
-      });
-      return false;
+  $("#signOutBtn").bind('click', function(e){
+    user.signOut().done(function(data){
+      window.location.href = '/';
+    });
   });
 });

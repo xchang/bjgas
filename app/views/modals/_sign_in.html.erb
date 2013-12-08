@@ -1,32 +1,26 @@
-<div class="gas-modal modal fade" id="signUpFormContainer" role="dialog">
+<div class="gas-modal modal fade" id="signInFormContainer" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle"></i></button>
-        <h4 class="modal-title">新用户注册</h4>
+        <h4 class="modal-title">用户登录</h4>
       </div>
       <div class="modal-body">
-        <div class="well directions">成为注册用户，享受在线订购服务。</div>
-        <form accept-charset="UTF-8" action="" id="signUpForm" role="form">
+        <form accept-charset="UTF-8" action="" id="signInForm" role="form">
           <div class="form-item">
-            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <span class="control-label"></span>
             <input class="form-control inline-input" id="userEmail" maxlength="30" name="email" placeholder="邮箱地址" type="text">
             <span class='warning' id='user_emailError'></span>
           </div>
           <div class="form-item">
-            <span class="control-label"><i class="fa fa-asterisk"></i></span>
+            <span class="control-label"></span>
             <input class="form-control inline-input" id="userPassword" maxlength="20" name="password" placeholder="密码" type="password">
             <span class='warning' id='user_passwordError'></span>
-          </div>
-          <div class="form-item">
-            <span class="control-label"><i class="fa fa-asterisk"></i></span>
-            <input class="form-control inline-input" id="userPasswordConfirm" maxlength="20" name="password_confirmation" placeholder="再输一次" type="password">
-            <span class='warning' id='user_passwordConfrimError'></span>
           </div>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-blue submit-btn" id="signUpBtn">提交</button>
+        <button type="button" class="btn btn-blue submit-btn" id="signInBtn">登录</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

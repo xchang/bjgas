@@ -8,6 +8,9 @@ BjgasRepo::Application.routes.draw do
   get 'branch' => 'branch#index'
   resources :orders
   resources :users
+  resources :sessions do
+    delete 'logout' => 'sessions#destroy', on: :collection
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
