@@ -1,0 +1,38 @@
+<div class="order-form modal fade" id="signUpFormContainer">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">新用户注册</h4>
+      </div>
+      <div class="modal-body">
+        <div class="well directions">
+        注册成为用户，您可以在线订购。
+        </div>
+        <form class="form-horizontal" role="form" id="signUpForm" action="/order">
+          <div class="form-group">
+            <label for="email" class="col-sm-3 control-label"><span class="mandatory">*</span>邮箱</label>
+            <div class="col-sm-9">
+              <input class="form-control" id="userEmail" placeholder="邮箱地址">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address" class="col-sm-3 control-label"><span class="mandatory">*</span>密码</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="userPassword">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-3 control-label"><span class="mandatory">*</span>再次输入</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" id="userConfirmPassword">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="signUpBtn">提交</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -35,19 +35,11 @@
           <li><a href ="#">业务介绍</a></li>
           <li><a href ="#">公司相册</a></li>
           <li><a href ="/branch">网点地址</a></li>
-          <% if user_signed_in? %>
           <li class="last register">
-            <%= link_to current_user.email, edit_user_registration_path %>
+            <a  data-toggle="modal" data-target="#signUpFormContainer">注册</a>
             <span>|</span>
-            <%= link_to "退出", destroy_user_session_path, :method => :delete %>
+            <a>登录</a>
           </li>
-          <% else %>
-          <li class="last register">
-            <%= link_to "注册", new_user_registration_path %>
-            <span>|</span>
-            <%= link_to "登录", new_user_session_path %>
-          </li>
-          <% end %>
         </ul>
       </div>  
   	</div>
@@ -68,3 +60,4 @@
   </footer>
 </body>
 </html>
+<%= render 'modals/sign_up' %>
