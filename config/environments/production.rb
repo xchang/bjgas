@@ -36,7 +36,7 @@ BjgasRepo::Application.configure do
   # Precompile additional assets
   config.assets.precompile += %w( *.svg *.eot *.woff *.ttf )
   config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif)
-  # config.assets.precompile += %w( *.js *.css)
+  config.assets.precompile += %w( *.js *.css)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
@@ -76,7 +76,6 @@ BjgasRepo::Application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { :host => 'localhost' }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation can not be found).

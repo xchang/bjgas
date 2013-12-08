@@ -14,6 +14,25 @@ BjgasRepo::Application.configure do
 
   # Configure static asset server for tests with Cache-Control for performance.
   config.serve_static_assets  = true
+  config.assets.css_compressor = :sass
+
+  # Add the fonts path
+  config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+  config.assets.paths << Rails.root.join('vendor', 'assets', 'images')
+
+  # Precompile additional assets
+  config.assets.precompile += %w( *.svg *.eot *.woff *.ttf )
+  config.assets.precompile += %w( *.png *.jpg *.jpeg *.gif)
+  config.assets.precompile += %w( *.js *.css)
+  # Do not fallback to assets pipeline if a precompiled asset is missed.
+  config.assets.compile = true
+
+  # Generate digests for assets URLs.
+  config.assets.digest = true
+
+  # Version of your assets, change this if you want to expire all your assets.
+  config.assets.version = '1.0'
+  
   config.static_cache_control = "public, max-age=3600"
 
   # Show full error reports and disable caching.
@@ -26,8 +45,6 @@ BjgasRepo::Application.configure do
   # Disable request forgery protection in test environment.
   config.action_controller.allow_forgery_protection = false
 
-  config.action_mailer.default_url_options = { :host => 'possessed-dracula-8577.herokuapp.com' }
-  
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
