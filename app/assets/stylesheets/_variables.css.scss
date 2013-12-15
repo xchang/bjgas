@@ -3,5 +3,5 @@ $content-width: 992px;
 /* colors */
 $title-color : #2A6496;
 $blue: #428bca;
-$blue-active: #336A99;
+$blue-active: darken($blue, 10%);
 $red: #b94a48;
