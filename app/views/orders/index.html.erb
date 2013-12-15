@@ -1,0 +1,30 @@
+<div class="order-list">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>contact</th>
+        <th>address</th>
+        <th>specification</th>
+        <th>number</th>
+        <th>mobile</th>
+        <th>telphone</th>
+        <th>statue</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <% @orders.each do |order| %>
+    <tbody>
+      <tr>
+        <td><%=order.contact%></td>
+        <td><%=order.address%></td>
+        <td><%=order.specification%></td>
+        <td><%=order.number%></td>
+        <td><%=order.mobile%></td>
+        <td><%=order.telphone%></td>
+        <td><%=order.statue%></td>
+        <td>Action</td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
