@@ -1,5 +1,31 @@
 
+/* common */
+html * {margin: 0; padding: 0; font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", sans-serif;}
+ul {list-style: none;}
+.content-container {max-width: $content-width; margin: 0 auto;}
+a {outline: none !important;}
 
+/* header */
+.header {background: url("bg_h.jpg"); height:102px;}
+.header_title {height: 90px; background: url("bg_h.jpg"); position: relative; }
+.header_title .title{text-decoration: none; float:left;}
+.header_title .logo {width: 85px; position:absolute; left: 0px; top: 5px;}
+.header_title .title .text {margin-left: 100px; color: $title-color; padding-top: 23px; line-height: 29px;}
+.header_title .title .text .ch{font-size: 32px; line-height: 23px; display:block;}
+.header_title .title .text .en{font-size: 20px;}
+.nav_menu {}
+.nav_bar {margin: 0 auto; position:absolute;right:0;}
+.nav_bar li{height: 102px; float: left; text-align: center; padding: 65px 11px 0; font-size: 17px; color: $title-color;}
+.nav_bar li a{text-decoration:none;}
+.nav_bar li:hover {border-bottom: 2px solid #6A6496;}
+.nav_bar li.register:hover {border-bottom: none;}
+
+
+/* footer */
+footer {height: 80px; text-align: center; background: url("bg_h.jpg"); padding-top: 10px;}
+
+/* Phones (<768px) */
+.nav_menu_m {float: right; margin-right: 10px; margin-top: 22px;}
 
 
 .content-sperator { margin-top: -3px; height: 2px; background: url("bg_b.jpg") repeat scroll center center transparent; }
