@@ -1,7 +1,7 @@
 module ApplicationHelper
 
   def submenu_class submenu
-    @active_submenu == submenu ? "active" : ""
+    @active_submenu == submenu ? "current" : ""
   end
 
 end
