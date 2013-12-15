@@ -8,8 +8,9 @@ BjgasRepo::Application.routes.draw do
   match '/intro', to: 'introduction#index', via: :get
   match '/intro/:submenu', :controller => 'introduction', :action => 'index', via: :get
 
-  get 'safety' => 'safety#index'
-
+  match '/safety', to: 'safety#index', via: :get
+  match '/safety/:submenu', :controller => 'safety', :action => 'index', via: :get
+  
   get 'branch' => 'branch#index'
 
   resources :orders

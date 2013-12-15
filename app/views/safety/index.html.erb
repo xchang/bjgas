@@ -2,20 +2,9 @@
   <%= render 'sidebar' %>
 <% end %>
 <%= render layout: 'layouts/two_column_content' do %>
-
-  <h5 class="main-body-title">气源质量与生产灌装的安全性</h5>
-  <div class="main-body-text para">
-  <p>
-    
-  </p>
-  <p>
-    
-  </p>
-  <p>
-    
-  </p>
-  <p>
-    
-  </p>
-  </div>
+  <div class="tab-content">
+    <div class="tab-pane active" id="<%= @active_submenu %>">
+      <%= render "safety/#{@active_submenu}" %>
+    </div>
+  </div> 
 <% end %>
