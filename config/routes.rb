@@ -5,6 +5,7 @@ BjgasRepo::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
   get 'intro' => 'introduction#index'
+  get 'safety' => 'safety#index'
   get 'branch' => 'branch#index'
   resources :orders
   resources :users
