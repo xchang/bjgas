@@ -53,7 +53,7 @@ var placeOrderForm = (function () {
       values['specification'] = $.trim($('#orderSpecification', $('#placeOrderFormContainer')).val());
       values['number'] = $.trim($('#orderNumber', $('#placeOrderFormContainer')).val());
       values['mobile'] = $.trim($('#orderMobile', $('#placeOrderFormContainer')).val());
-      values['telphone'] = $.trim($('#telphone', $('#placeOrderFormContainer')).val());
+      values['telphone'] = $.trim($('#orderTelphone', $('#placeOrderFormContainer')).val());
       return order.create(values).done(function(data){
         alert("我们已经收到您的订单，会尽快为您处理。");
         window.location.href = "/";

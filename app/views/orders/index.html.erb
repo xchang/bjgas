@@ -1,19 +1,19 @@
 <div class="order-list">
-  <table class="table">
+  <table class="table table-hover table-striped">
     <thead>
       <tr>
-        <th>contact</th>
-        <th>address</th>
-        <th>specification</th>
-        <th>number</th>
-        <th>mobile</th>
-        <th>telphone</th>
-        <th>statue</th>
-        <th>Action</th>
+        <th>联系人</th>
+        <th>地址</th>
+        <th>规格</th>
+        <th>数量</th>
+        <th>手机</th>
+        <th>固话</th>
+        <th>订单状态</th>
+        <th></th>
       </tr>
     </thead>
-    <% @orders.each do |order| %>
     <tbody>
+      <% @orders.each do |order| %>
       <tr>
         <td><%=order.contact%></td>
         <td><%=order.address%></td>
@@ -22,7 +22,11 @@
         <td><%=order.mobile%></td>
         <td><%=order.telphone%></td>
         <td><%=order.statue%></td>
-        <td>Action</td>
+        <td>
+          <a><span class="action">已处理</span></a>
+          <span class="seperator">|</span>
+          <a><span class="action">删除</span></a>
+        </td>
       </tr>
       <% end %>
     </tbody>

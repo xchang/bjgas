@@ -1,4 +1,15 @@
 .order-list{
   width: 80%;
   margin: auto;
+  min-height: 500px;
+  padding-top: 20px;
+  span.seperator {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  span.action {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
