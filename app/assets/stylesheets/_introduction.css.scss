@@ -1,7 +1,26 @@
 .intro-content {
+  margin: 20px 0;
   .products-list {
+    margin: 20px 0;
     li {
-      @include box-shadow(0 0 3px rgba(#000, 0.4));
+      .product-item {
+        border: 2px solid $blue-light;
+        @include box-shadow(0 0 3px rgba($blue, 0.5));
+        img {
+          width: 100%;
+        }
+        .name {
+          background: $blue-light;
+          color: #FFF;
+          display: block;
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
     }
+  }
+  .sign-img {
+    width: 100%;
+    @include box-shadow(0 0 5px rgba(#000, 0.3));
   }
 }
