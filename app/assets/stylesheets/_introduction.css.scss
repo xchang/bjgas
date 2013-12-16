@@ -38,5 +38,8 @@
       color: darken($blue, 20%);
       margin: 30px 0 8px;
     }
+    img {
+      @include box-shadow(0 0 5px rgba(#000, 0.3));
+    }
   }
 }
