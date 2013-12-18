@@ -31,7 +31,7 @@ BjgasRepo::Application.configure do
 
   # Add the fonts path
   config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
-  config.assets.paths << Rails.root.join('vendor', 'assets', 'images')
+  config.assets.paths << Rails.root.join('vendor', 'assets', 'javascripts')
 
   # Precompile additional assets
   config.assets.precompile += %w( *.svg *.eot *.woff *.ttf )
@@ -40,9 +40,6 @@ BjgasRepo::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-
-  # Generate digests for assets URLs.
-  config.assets.digest = true
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
