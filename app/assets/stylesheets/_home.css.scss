@@ -24,6 +24,7 @@
 .other .news .icon{position: absolute; left:0; top: 2px;}
 
 .carousel-control.left, .carousel-control.right {background: none;}
+.carousel-inner {border: 1px outset #ffff00;}
 @media (min-width: 768px){
 .other .about-us {border-right: 1px dashed #ccc;} 
 }
