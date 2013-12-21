@@ -9,62 +9,66 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="header">
-  	<div class="header_title content-container">
-      <a class="title" href="/"><img class="logo" src="<%=asset_path "logo.jpg"%>" /><h1 class="text hidden-xs"><span class="ch">北京液化气</span><span class="en">BEIJING LP GAS</span></h1></a>
-  		<div  class ="btn-group nav_menu_m visible-xs" >
-          <button  class ="btn btn-lg dropdown-toggle"  data-toggle ="dropdown" ><span class="glyphicon glyphicon-align-justify">&nbsp;</span><span class ="caret" ></span></button>
-          <ul class ="dropdown-menu pull-right">
-             <li><a href ="/">首页</a></li>
-             <li role="presentation" class="divider"></li>
-             <li><a href ="/intro">公司简介</a></li>
-             <li role="presentation" class="divider"></li>
-             <li><a href ="#">业务介绍</a></li>
-             <li role="presentation" class="divider"></li>
-             <li><a href ="/safety">安全管理</a></li>
-             <li role="presentation" class="divider"></li>
-             <li><a href ="#">公司相册</a></li>
-             <li role="presentation" class="divider"></li>
-             <li><a href ="/branch">网点地址</a></li>
+  <div class="main-wrapper">
+    <div class="header">
+    	<div class="header_title content-container">
+        <a class="title" href="/"><img class="logo" src="<%=asset_path "logo.jpg"%>" /><h1 class="text hidden-xs"><span class="ch">北京液化气</span><span class="en">BEIJING LP GAS</span></h1></a>
+    		<div  class ="btn-group nav_menu_m visible-xs" >
+            <button  class ="btn btn-lg dropdown-toggle"  data-toggle ="dropdown" ><span class="glyphicon glyphicon-align-justify">&nbsp;</span><span class ="caret" ></span></button>
+            <ul class ="dropdown-menu pull-right">
+               <li><a href ="/">首页</a></li>
+               <li role="presentation" class="divider"></li>
+               <li><a href ="/intro">公司简介</a></li>
+               <li role="presentation" class="divider"></li>
+               <li><a href ="#">业务介绍</a></li>
+               <li role="presentation" class="divider"></li>
+               <li><a href ="/safety">安全管理</a></li>
+               <li role="presentation" class="divider"></li>
+               <li><a href ="#">公司相册</a></li>
+               <li role="presentation" class="divider"></li>
+               <li><a href ="/branch">网点地址</a></li>
+            </ul>
+        </div>
+        <div class="nav_menu hidden-xs">
+          <ul class="nav_bar">
+            <li><a href ="/">首页</a></li>
+            <li><a href ="/intro">公司简介</a></li>
+            <li><a href ="#">业务介绍</a></li>
+            <li><a href ="/safety">安全管理</a></li>
+            <li><a href ="#">公司相册</a></li>
+            <li><a href ="/branch">网点地址</a></li>
+            <% if session.has_key?(:current_user) && !session[:current_user].nil? %>
+            <li class="last register">
+              <a href="#">编辑</a>
+              <span>|</span>
+              <a href="#" id="signOutBtn">退出</a>
+            </li>
+            <% else %>
+            <li class="last register">
+              <a data-toggle="modal" data-target="#signUpFormContainer">注册</a>
+              <span>|</span>
+              <a data-toggle="modal" data-target="#signInFormContainer">登录</a>
+            </li>
+            <% end %>
           </ul>
+        </div>  
+    	</div>
+      <div class="nav_bg hidden-xs">
       </div>
-      <div class="nav_menu hidden-xs">
-        <ul class="nav_bar">
-          <li><a href ="/">首页</a></li>
-          <li><a href ="/intro">公司简介</a></li>
-          <li><a href ="#">业务介绍</a></li>
-          <li><a href ="/safety">安全管理</a></li>
-          <li><a href ="#">公司相册</a></li>
-          <li><a href ="/branch">网点地址</a></li>
-          <% if session.has_key?(:current_user) && !session[:current_user].nil? %>
-          <li class="last register">
-            <a href="#">编辑</a>
-            <span>|</span>
-            <a href="#" id="signOutBtn">退出</a>
-          </li>
-          <% else %>
-          <li class="last register">
-            <a data-toggle="modal" data-target="#signUpFormContainer">注册</a>
-            <span>|</span>
-            <a data-toggle="modal" data-target="#signInFormContainer">登录</a>
-          </li>
-          <% end %>
-        </ul>
-      </div>  
-  	</div>
-    <div class="nav_bg hidden-xs">
     </div>
+    <%= content_for?(:content) ? yield(:content) : yield %>
   </div>
-<%= content_for?(:content) ? yield(:content) : yield %>
-  <footer>
-    网站建设中...
-    <p>
-      <span>Copyright © 2013-2014 北京液化气 西郊分公司, all rights reserved</span>
-      <span>｜</span>
-      <span>ICP备案中</span>
-    </p>
-    <p><a>联系我们</a></p>
-  </footer>
+  <div class="footer-wrapper">
+    <footer>
+      网站建设中...
+      <p>
+        <span>Copyright © 2013-2014 北京液化气 西郊分公司, all rights reserved</span>
+        <span>｜</span>
+        <span>ICP备案中</span>
+      </p>
+      <p><a>联系我们</a></p>
+    </footer>
+  </div>
 </body>
 </html>
 <%= render 'modals/sign_up' %>
