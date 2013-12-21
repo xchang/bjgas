@@ -10,7 +10,19 @@ a {outline: none !important;}
 pre {font-size: 16px; padding: 15px 20px; line-height: 28px; margin: 10px 0;}
 
 /* header */
-.header {background: asset-url("bg_h.jpg"); height:102px;}
+.header {
+  background: asset-url("bg_h.jpg"); 
+  height:102px;
+  position: relative;
+  .register {
+    position: absolute;
+    top: 10px;
+    right: 10px; 
+    a {
+      cursor: pointer;
+    }
+  }
+}
 .header_title {height: 90px; background: asset-url("bg_h.jpg"); position: relative; }
 .header_title .title{text-decoration: none; float:left;}
 .header_title .logo {width: 85px; position:absolute; left: 0px; top: 5px;}
