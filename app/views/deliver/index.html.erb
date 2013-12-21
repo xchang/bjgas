@@ -1,0 +1,10 @@
+<% content_for :sidebar do %>
+  <%= render 'sidebar' %>
+<% end %>
+<%= render layout: 'layouts/two_column_content' do %>
+  <div class="tab-content">
+    <div class="tab-pane active" id="<%= @active_submenu %>">
+      <%= render "deliver/#{@active_submenu}" %>
+    </div>
+  </div> 
+<% end %>

@@ -11,9 +11,10 @@ BjgasRepo::Application.routes.draw do
   match '/safety', to: 'safety#index', via: :get
   match '/safety/:submenu', :controller => 'safety', :action => 'index', via: :get
   
-  match '/process', to: 'process#index', via: :get
-  match '/process/:submenu', :controller => 'process', :action => 'index', via: :get
+  match '/deliver', to: 'deliver#index', via: :get
+  match '/deliver/:submenu', :controller => 'deliver', :action => 'index', via: :get
 
+  get 'process' => 'process#index'
   get 'branch' => 'branch#index'
 
   resources :orders
