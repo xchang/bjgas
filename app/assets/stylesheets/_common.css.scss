@@ -58,6 +58,9 @@ footer {height: 80px; text-align: center; background: asset-url("bg_h.jpg"); pad
 .main-body-title { color: $title-color; font-size: 25px; font-weight: bold; margin: 20px 0;}
 .main-body-text {
   font-size: 16px;
+  img {
+    @include box-shadow(0 0 5px rgba(#000, 0.3));
+  }
   img.block {
     display: block;
     margin: 10px 0 20px;
