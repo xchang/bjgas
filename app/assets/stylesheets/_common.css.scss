@@ -11,7 +11,7 @@ pre {font-size: 16px; padding: 15px 20px; line-height: 28px; margin: 10px 0;}
 
 /* header */
 .header {
-  background: asset-url("bg_h.jpg"); 
+  background: image-url("bg_h.jpg");
   height:102px;
   position: relative;
   .register {
@@ -23,7 +23,7 @@ pre {font-size: 16px; padding: 15px 20px; line-height: 28px; margin: 10px 0;}
     }
   }
 }
-.header_title {height: 90px; background: asset-url("bg_h.jpg"); position: relative; }
+.header_title {height: 90px; background: image-url("bg_h.jpg"); position: relative; }
 .header_title .title{text-decoration: none; float:left;}
 .header_title .logo {width: 85px; position:absolute; left: 0px; top: 5px;}
 .header_title .title .text {margin-left: 100px; color: $title-color; padding-top: 23px; line-height: 29px;}
@@ -47,13 +47,13 @@ pre {font-size: 16px; padding: 15px 20px; line-height: 28px; margin: 10px 0;}
 
 /* footer */
 .footer-wrapper {width: 100%; position: absolute;}
-footer {height: 80px; text-align: center; background: asset-url("bg_h.jpg"); padding-top: 10px; margin: 30px auto 0; width: $content-width;}
+footer {height: 80px; text-align: center; background: image-url("bg_h.jpg"); padding-top: 10px; margin: 30px auto 0; width: $content-width;}
 
 /* Phones (<768px) */
 .nav_menu_m {float: right; margin-right: 10px; margin-top: 22px;}
 
 
-.content-sperator { margin-top: -3px; height: 2px; background: asset-url("bg_b.jpg") repeat scroll center center transparent; }
+.content-sperator { margin-top: -3px; height: 2px; background: image-url("bg_h.jpg") repeat scroll center center transparent; }
 .content-body {max-width: $content-width; margin: 0px auto; }
 .main-body-title { color: $title-color; font-size: 25px; font-weight: bold; margin: 20px 0;}
 .main-body-text {
