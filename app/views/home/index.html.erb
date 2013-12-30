@@ -48,9 +48,13 @@
     </div>
     <div class="col-sm-6 col-md-4">
     <h5>企业动态</h5>
-      <p class="news"><span class="icon glyphicon glyphicon-volume-down"></span>总建筑面积11500平方米，归属于海淀区八里庄街道办事处，在职职工共计442人，年设计灌装能力：50000吨。 </p>
-      <br />
-      <p class="news"><span class="icon glyphicon glyphicon-volume-down"></span>北京市液化石油气公司是国家大型一类燃气企业，经营范围主要包括：液化石油气储存、灌装、运输、销售、燃气工程设计施工，设备维修及燃气具销售，以液化气作燃料的汽车改装工作，以及液化石油气加气站的建设、对外经营等。公司下设储备分公司</p>       
+      <%- @news_list.each do |news| %>
+      <p class="news"><span class="icon glyphicon glyphicon-volume-down"></span><%= news.content %></p>
+      <br/>
+      <%- end %>
+      <!--<p class="news"><span class="icon glyphicon glyphicon-volume-down"></span>总建筑面积11500平方米，归属于海淀区八里庄街道办事处，在职职工共计442人，年设计灌装能力：50000吨。 </p>-->
+      <!--<br />-->
+      <!--<p class="news"><span class="icon glyphicon glyphicon-volume-down"></span>北京市液化石油气公司是国家大型一类燃气企业，经营范围主要包括：液化石油气储存、灌装、运输、销售、燃气工程设计施工，设备维修及燃气具销售，以液化气作燃料的汽车改装工作，以及液化石油气加气站的建设、对外经营等。公司下设储备分公司</p>       -->
     </div>
   </div>  
 </div>

@@ -19,6 +19,8 @@ BjgasRepo::Application.routes.draw do
 
   resources :orders
 
+  resources :news, :except => :show
+
   resources :users
 
   resources :sessions do
