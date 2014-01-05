@@ -7,4 +7,8 @@ module ApplicationHelper
     @active_menu == menu ? "current" : ""
   end
 
+  def to_full_time date
+    date.strftime '%Y-%m-%d %H:%M'
+  end
+
 end

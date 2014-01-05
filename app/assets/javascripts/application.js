@@ -22,6 +22,7 @@
 //= require sign-up-form
 //= require sign-in-form
 //= require place-order-form
+//= require news-form
 //= require_tree .
 
 $(document).ready(function () {

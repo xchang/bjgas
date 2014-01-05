@@ -142,7 +142,10 @@ footer {height: 80px; text-align: center; background: image-url("bg_h.jpg"); pad
         width: 70%; 
         display: inline-block; 
       }
-      i.icon-asterisk { font-size: 12px;}
+      i.fa-asterisk {
+        font-size: 12px;
+        color: $red;
+      }
       .warning { color: $red; }
       .small-input {
         width: 120px;
@@ -156,6 +159,12 @@ footer {height: 80px; text-align: center; background: image-url("bg_h.jpg"); pad
       color: white;
       &:hover {
         background-color: $blue-active;
+      }
+      &[disabled] {
+        background-color: #999;
+        &:hover {
+          background-color: #999;
+        }
       }
     }
   }

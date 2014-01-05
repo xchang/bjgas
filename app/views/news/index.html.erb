@@ -1,25 +1,30 @@
-<a href="/news/new">创建新企业动态</a>
+
 <div class="news-list">
+  <button class="new-news btn btn-primary btn-lg hidden-xs" type="button" data-toggle="modal" data-target="#createNewsFormContainer">创建新企业动态</button>
   <table class="table table-hover table-striped">
     <thead>
       <tr>
         <th>内容</th>
-        <th>发布时间</th>
-        <th>&nbsp;</th>
+        <th class="datetime">发布时间</th>
+        <th class="actions">&nbsp;</th>
       </tr>
     </thead>
     <tbody>
       <%- @news_list.each do |news| %>
       <tr>
-        <td><%=news.content%></td>
-        <td><%=news.updated_at%></td>
-        <td>
-          <a><span class="action">编辑</span></a>
+        <td><%= news.content %></td>
+        <td class="datetime"><%= to_full_time(news.updated_at) %></td>
+        <td class="actions">
+          <a><span class="action" data-toggle="modal" data-target="#editNewsFormContainer" data-news-id="<%=news.id%>">编辑</span></a>
           <span class="seperator">|</span>
-          <a><span class="action">删除</span></a>
+          <a><span class="action" data-news-id="<%=news.id%>">删除</span></a>
         </td>
       </tr>
       <%- end %>
     </tbody>
   </table>
 </div>
+
+
+<%= render 'create_news' %>
+<%= render 'edit_news' %>

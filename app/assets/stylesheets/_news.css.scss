@@ -1,0 +1,35 @@
+
+.news-list{
+  width: 80%;
+  margin: auto;
+  min-height: 500px;
+  padding-top: 20px;
+  table {
+    .actions {
+      width: 100px;
+    }
+    .datetime {
+      width: 150px;
+    }
+  }
+  span.seperator {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  span.action {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .new-news {
+    margin: 10px 0;
+    padding: 4px 10px;
+    font-size: 16px;
+  }
+}
+
+.news-modal{
+  textarea {
+    margin-top: 5px;
+  }
+}
